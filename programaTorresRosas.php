@@ -153,7 +153,7 @@ function solicitarJugador(){
     do{
         //string $nombreUsuario
         //boolean $esCaracter
-        echo"Ingrese su nombre de usuario \n";
+        echo"Ingrese su nombre de usuario (Debe iniciar con una letra)\n";
         $nombreUsuario = trim(fgets(STDIN));
         $esCaracter = ctype_alpha($nombreUsuario[0]);
     }while($esCaracter == false);
