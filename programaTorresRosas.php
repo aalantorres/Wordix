@@ -380,15 +380,12 @@ function agregarEstadisticas($resumenPartidas, $partidaJugada){
  * @param array $coleccionPartidas
  */
 function mostrarColeccionPartidasOrd ($coleccionPartidas){
-    function comparacion($a, $b ){
-        return ($a < $b) ? -1 : 1;
-    }
     uasort($coleccionPartidas,'comparacion'); //ordena un array segun una funcion de comparacion dada
-    function comparacion1($a, $b, ){
-        return ($a < $b) ? -1 : 1;
-    }
-    uasort($coleccionPartidas,'comparacion1');
     print_r($coleccionPartidas); //print_r imprime un array completo por pantalla 
+}
+/**comparacion para uasort */
+function comparacion($a, $b ){
+    return ($a < $b) ? -1 : 1;
 }
 
 /**************************************/
