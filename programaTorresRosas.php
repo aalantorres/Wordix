@@ -296,10 +296,10 @@ function agregarEstadisticas($resumenPartidas, $partidaJugada){
     $yaExiste = false;
     while ($resumenPartidas[$i]["nombre"] != $partidaJugada["jugador"] && $i < $rango - 1){ //analiza si un jugador ya existe
         $i = $i + 1;
-        if($resumenPartidas[$i]["nombre"] == $partidaJugada["jugador"]){
-            $yaExiste = true;
-        }
     } 
+    if($resumenPartidas[$i]["nombre"] == $partidaJugada["jugador"]){
+        $yaExiste = true;
+    }
     if(!$yaExiste) { //si el jugador no existe crea las estadisticas de el, caso contrario suma las nuevas estadisticas del usuario
         $nvoJugador = count($resumenPartidas);
         $resumenPartidas[$nvoJugador]["nombre"] = $partidaJugada ["jugador"];
@@ -380,7 +380,7 @@ function agregarEstadisticas($resumenPartidas, $partidaJugada){
  * @param array $coleccionPartidas
  */
 function mostrarColeccionPartidasOrd ($coleccionPartidas){
-    function comparacion($a, $b, ){
+    function comparacion($a, $b ){
         return ($a < $b) ? -1 : 1;
     }
     uasort($coleccionPartidas,'comparacion'); //ordena un array segun una funcion de comparacion dada
@@ -483,3 +483,4 @@ do {
             break; 
     }
 } while ($opcion != 8); 
+echo"\nJuego Finalizado";
