@@ -31,8 +31,9 @@ function cargarColeccionPalabras()
     return ($coleccionPalabras);
 }
 /**
- * Permite ingresar un numero de partida y si el numero es valido devuelve el resumen de esa partida jugada
+ * Permite ingresar una coleccion de partidas y un numero de partida,si el numero es valido devuelve el resumen de esa partida jugada
  * @param array $coleccionPartidas
+ * @param int $numeroPartida
  */
 function mostrarPartida ($coleccionPartidas, $numeroPartida) 
 {
