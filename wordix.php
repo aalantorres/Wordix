@@ -116,7 +116,7 @@ function escribirSegunEstado($texto, $estado)
 }
     
 /**
- * ****COMPLETAR*****
+ * Le escribe un mensaje de bienvenida al usuario 
  */
 function escribirMensajeBienvenida($usuario)
 {
@@ -129,7 +129,9 @@ function escribirMensajeBienvenida($usuario)
 
 
 /**
- * ****COMPLETAR*****
+ * Verifica si una cadena es una palabra, en caso de que lo sea retorna true, caso contrario false
+ * @param string $cadena
+ * @return boolean
  */
 function esPalabra($cadena)
 {
