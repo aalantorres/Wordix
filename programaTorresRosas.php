@@ -6,7 +6,7 @@ include_once("wordix.php");
 /**************************************/
 
 /* Apellido, Nombre. Legajo. Carrera. mail. Usuario Github */
-/* ... COMPLETAR ... */
+/* Torres Rosas Alan Lisandro FAI 2835 TUDW alantorres3050@gmail.com aalantorres */
 
 
 
